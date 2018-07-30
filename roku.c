@@ -6,6 +6,10 @@
 
 #include "roku.h"
 
+static const char chars[4][8] = { {'A', 'B', 'C', 'D', 'E', 'F', 'G', 8},
+                     {'H', 'I', 'J', 'K', 'L', 'M', 'N', 27},
+                     {'O', 'P', 'Q', 'R', 'S', 'T', 'U', 0},
+                     {'V', 'W', 'X', 'Y', 'Z', '.', '\'', 0} };
 
 struct Directions getDirections(struct IndicesOfChar start, struct IndicesOfChar end) {
 	//printf("Start Row: %d\tStart Col: %d\nEnd Row: %d\tEnd Col: %d\n", start.row, start.col, end.row, end.col);
