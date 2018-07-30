@@ -3,10 +3,7 @@
 
 #include <curl/curl.h>
 
-char chars[4][8] = { {'A', 'B', 'C', 'D', 'E', 'F', 'G', 8},
-                     {'H', 'I', 'J', 'K', 'L', 'M', 'N', 27},
-                     {'O', 'P', 'Q', 'R', 'S', 'T', 'U', 0},
-                     {'V', 'W', 'X', 'Y', 'Z', '.', '\'', 0} };
+static const char chars[4][8];
 
 struct Directions {
         int horizontal;
